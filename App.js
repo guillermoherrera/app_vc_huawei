@@ -13,8 +13,8 @@ import {Root} from 'native-base';
 import {Provider} from 'react-redux'
 import NavigationService from './src/services/navigation'
 import { Loading } from './src/components/common';
-import {fcmService} from './src/FCMService'
-import {localNotificationService} from './src/LocalNotificationService'
+//import {fcmService} from './src/FCMService'
+//import {localNotificationService} from './src/LocalNotificationService'
 import Modal from 'react-native-modal';
 import {moderateScale} from 'react-native-size-matters';
 
@@ -51,8 +51,8 @@ export default class App extends Component {
     const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
     const AppNavigator = createRootNavigator(signedIn)
 
-    return <AppNotification checkedSignIn={checkedSignIn} store={store} AppNavigator={AppNavigator}/>
-    /*if (!checkedSignIn) {
+    //return <AppNotification checkedSignIn={checkedSignIn} store={store} AppNavigator={AppNavigator}/>
+    if (!checkedSignIn) {
       return <Loading />;
     }
     return (
@@ -61,7 +61,7 @@ export default class App extends Component {
           <AppNavigator ref={navigatorRef => NavigationService.setTopLevelNavigator(navigatorRef)} />
         </Provider>
       </Root>
-    );*/
+    );
   }
   
 };

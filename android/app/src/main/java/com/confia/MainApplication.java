@@ -21,9 +21,6 @@ import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.learnium.RNDeviceInfo.RNDeviceInfo;
 import com.devfd.RNGeocoder.RNGeocoderPackage;
 import com.zoontek.rnbootsplash.RNBootSplashPackage;
-import io.invertase.firebase.app.ReactNativeFirebaseAppPackage;
-import io.invertase.firebase.messaging.ReactNativeFirebaseMessagingPackage;
-import com.dieam.reactnativepushnotification.ReactNativePushNotificationPackage;
 import androidx.multidex.MultiDexApplication;
 
 public class MainApplication extends MultiDexApplication implements ReactApplication {
@@ -47,10 +44,7 @@ public class MainApplication extends MultiDexApplication implements ReactApplica
               new RNGestureHandlerPackage(),
               new RNGeocoderPackage(),
               //new VectorIconsPackage(),
-              new RNBootSplashPackage(),
-              new ReactNativeFirebaseAppPackage(),
-              new ReactNativeFirebaseMessagingPackage(),
-              new ReactNativePushNotificationPackage()
+              new RNBootSplashPackage()
           );
         }
 

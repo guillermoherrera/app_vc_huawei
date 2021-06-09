@@ -1,5 +1,4 @@
 apply plugin: "com.android.application"
-apply plugin: 'com.google.gms.google-services'
 
 import com.android.build.OutputFile
 
@@ -228,9 +227,6 @@ dependencies {
     implementation project(':react-native-device-info')
     implementation project(':react-native-geocoder')
     implementation project(':react-native-bootsplash')
-    implementation project(path: ":@react-native-firebase_app")
-    implementation project(path: ":@react-native-firebase_messaging")
-    implementation project(':react-native-push-notification')
     implementation 'androidx.multidex:multidex:2.0.1'
     implementation 'com.google.firebase:firebase-messaging:21.1.0'
     
