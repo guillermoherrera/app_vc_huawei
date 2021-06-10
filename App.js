@@ -66,7 +66,7 @@ export default class App extends Component {
   
 };
 
-function AppNotification({checkedSignIn, store, AppNavigator}) {
+/*function AppNotification({checkedSignIn, store, AppNavigator}) {
 
   const [showModal, setShowModal] = useState(false);
   const [title, setTitle] = useState('Vale Confía');
@@ -149,6 +149,6 @@ function AppNotification({checkedSignIn, store, AppNavigator}) {
         onPress={() => localNotificationService.cancelAllLocalNotifications()}
       />
     </View>*/
-  )
+//  )
 
-}
+//}
